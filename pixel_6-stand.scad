@@ -80,22 +80,27 @@ difference()
 
         translate([37, 3.5, 16]) cube([12, 7, 13.5 + 1]);
 
-        translate([43, 6.5, -21]) cylinder(d=3.2, h=65, $fn=100);
+        translate([43, 6.9, -21]) cylinder(d=4.2, h=65, $fn=100);
 
-        translate([43, 4.9, -21]) cube([20, 3.2, 65]);
+        translate([43, 4.8, -21]) cube([20, 4.2, 65]);
       }
     }
   }
 
   translate([43, 5.8, 1.6])
-    rotate([-90, 0, 0]) cylinder(d=3.2, h=80, $fn=100);
+    rotate([-90, 0, 0]) cylinder(d=4.2, h=80, $fn=100);
 
-  translate([43-1.6, 5.8, -1]) cube ([3.2, 80, 2.6]);
+  translate([43-2.1, 5.8, -1]) cube ([4.2, 80, 2.6]);
 
   for(k = [0:36:36])
     for(j = [0:4:8])
       for(i = [0:3:9])
         translate([20 + i + k, -1, 18 + j])
           rotate([-90, 0, 0]) cylinder(d=2, h=16, $fn=100);
+
+  translate([43, 13, 2])
+    rotate([45, 0, 0]) cylinder(d=4.2, h=5, $fn = 100);
+  translate([41, 11, 1])
+    rotate([45, 0, 0]) cube([4.2, 2.1, 4.2]);
 
 }
