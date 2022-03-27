@@ -52,8 +52,23 @@ difference()
                 translate([76, 0, 40]) cube([10, 3, 1.5]);
               }
             }
+            // End front plate
           }
+
+          // Remove matter in the back
+          translate([13, 10, 30]) cube([60, 10, 80]);
+          translate([10, 10, 33]) cube([66, 10, 80]);
+
+          translate([13, 10, 33]) {
+            rotate([-90, 0, 0]) cylinder(h=10, d=6, center=false, $fn=100);
+          }
+
+          translate([73, 10, 33]) {
+            rotate([-90, 0, 0]) cylinder(h=10, d=6, center=false, $fn=100);
+          }
+          // End remove mate
         }
+
       }
     }
 
