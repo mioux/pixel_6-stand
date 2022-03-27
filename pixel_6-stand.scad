@@ -78,7 +78,7 @@ difference()
         translate([55, 7, -21]) cylinder(d=8, h=65, $fn=100);
         translate([55, 3, -21]) cube([13, 8, 65]);
 
-        translate([37, 3.5, 16]) cube([12, 7, 13.5 + 1]);
+        translate([37, 3.5, 11]) cube([12, 7, 18.5 + 1]);
 
         translate([43, 6.9, -21]) cylinder(d=4.2, h=65, $fn=100);
 
